@@ -33,28 +33,31 @@ This study uses:
 - Fully synthetic and privacy-preserving  
 - Preserves temporal and behavioural structure  
 
- Dataset available at:  
+Dataset available at:  
 https://doi.org/10.5281/zenodo.17858297
 
->  The dataset is not included in this repository.  
+> The dataset is not included in this repository.  
 > Please download it from Zenodo and place it in your working directory before running the notebook.
 
 ---
 
 ## Reproducibility
 
-This repository is designed to support **end-to-end reproducibility**.
+This repository is designed to support **end-to-end reproducibility** of the benchmark.
 
 ### Key properties:
 - Fixed random seed (`42`)
-- Deterministic preprocessing pipeline
-- Explicit feature engineering steps
-- No leakage from test set into training
-- Fully specified evaluation procedure
+- Deterministic preprocessing pipeline  
+- Explicit feature engineering steps  
+- Fixed and fully specified model configurations  
+- No leakage from test set into training  
+- Fully specified evaluation procedure  
+
+All implementation code, preprocessing steps, and evaluation pipelines are publicly available and executable via the provided Jupyter notebook.
 
 ---
 
-##  Pipeline Overview
+## Pipeline Overview
 
 The notebook follows a structured pipeline:
 
@@ -63,7 +66,7 @@ The notebook follows a structured pipeline:
    - Temporal encoding (cyclical features)  
    - Categorical encoding (one-hot encoding)  
    - Behavioural frequency features (computed from training data only)  
-3. Train–test split (stratified 80/20)  
+3. Train–test split (stratified 80/20 with fixed random seed)  
 4. Model training  
 5. Threshold optimization  
 6. Evaluation:
@@ -78,7 +81,7 @@ The notebook follows a structured pipeline:
 Decision thresholds are selected by:
 
 - Sweeping thresholds over model output scores  
-- Selecting the threshold that maximizes **F1-score on the test set**
+- Selecting the threshold that maximizes **F1-score on the evaluation set**
 
 > This approach characterizes the **maximum observable operating point under identical evaluation conditions across models**, rather than a deployment-calibrated threshold.
 
@@ -95,12 +98,14 @@ Decision thresholds are selected by:
 
 ## Outputs
 
-The notebook produces outputs consistent with the paper:
+The repository includes precomputed outputs consistent with the paper:
 
 - Model comparison metrics  
 - Ablation study results  
 - Top-k alert performance  
-- Precision–recall curves (`precision_recall_curves2.png`)
+- Precision–recall curves (`precision_recall_curves2.png`)  
+
+Precomputed outputs are available in the `results/` directory to enable immediate inspection without re-running the full pipeline.
 
 ---
 
