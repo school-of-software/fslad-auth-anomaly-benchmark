@@ -1,0 +1,15 @@
+feature_group,importance
+login_hour_sin,0.16647680710691187
+login_hour_cos,0.15786309370074844
+login_dayofweek,0.15483291049058293
+login_challenge_method,0.13749207205022707
+event_name,0.08452561451024951
+ip_country_anonymized,0.08314332441885536
+system_name,0.058862459026412836
+sensitive_action_name,0.049488347100083915
+system_name_freq,0.029910863969917763
+login_type,0.02909023204471927
+is_weekend,0.021075323662346206
+login_challenge_status,0.014834289168145758
+is_second_factor,0.012404662750799145
+user_hash_freq,0.0

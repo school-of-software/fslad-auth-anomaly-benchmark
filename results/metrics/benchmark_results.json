@@ -1,0 +1,212 @@
+{
+  "table2_model_performance_best_f1": [
+    {
+      "Model": "Enhanced Random Forest",
+      "Precision": 0.07601540181343933,
+      "Recall": 0.8511821974965229,
+      "F1-score": 0.13956670467502852,
+      "ROC-AUC": 0.5076680081673719,
+      "PR-AUC": 0.07355952736007457
+    },
+    {
+      "Model": "XGBoost (class-weighted)",
+      "Precision": 0.07432432432432433,
+      "Recall": 0.9638386648122392,
+      "F1-score": 0.1380065717415115,
+      "ROC-AUC": 0.4935411765503704,
+      "PR-AUC": 0.07336053042758822
+    },
+    {
+      "Model": "XGBoost (target encoding)",
+      "Precision": 0.0738799835593917,
+      "Recall": 1.0,
+      "F1-score": 0.13759448856568748,
+      "ROC-AUC": 0.5008399021247003,
+      "PR-AUC": 0.07471656249127359
+    }
+  ],
+  "table3_ablation": [
+    {
+      "Model": "Random Forest",
+      "Feature Set": "Baseline",
+      "Precision": 0.07850746268656716,
+      "Recall": 0.7315716272600834,
+      "F1-score": 0.14179808599541718,
+      "ROC-AUC": 0.5110787089781909,
+      "PR-AUC": 0.07444566429339844,
+      "Precision@100": 0.1
+    },
+    {
+      "Model": "Random Forest",
+      "Feature Set": "Enhanced",
+      "Precision": 0.07601540181343933,
+      "Recall": 0.8511821974965229,
+      "F1-score": 0.13956670467502852,
+      "ROC-AUC": 0.5076680081673719,
+      "PR-AUC": 0.07355952736007457,
+      "Precision@100": 0.08
+    },
+    {
+      "Model": "XGBoost",
+      "Feature Set": "Baseline",
+      "Precision": 0.07519397535371976,
+      "Recall": 0.9165507649513213,
+      "F1-score": 0.13898555309501212,
+      "ROC-AUC": 0.5042922165833161,
+      "PR-AUC": 0.07384960954378912,
+      "Precision@100": 0.04
+    },
+    {
+      "Model": "XGBoost",
+      "Feature Set": "Enhanced",
+      "Precision": 0.07432432432432433,
+      "Recall": 0.9638386648122392,
+      "F1-score": 0.1380065717415115,
+      "ROC-AUC": 0.4935411765503704,
+      "PR-AUC": 0.07336053042758822,
+      "Precision@100": 0.07
+    }
+  ],
+  "table4_topk": [
+    {
+      "Model": "Enhanced Random Forest",
+      "Precision@50": 0.08,
+      "Precision@100": 0.08,
+      "Precision@200": 0.065
+    },
+    {
+      "Model": "XGBoost",
+      "Precision@50": 0.06,
+      "Precision@100": 0.07,
+      "Precision@200": 0.085
+    },
+    {
+      "Model": "Isolation Forest",
+      "Precision@50": 0.02,
+      "Precision@100": 0.02,
+      "Precision@200": 0.055
+    }
+  ],
+  "threshold_comparison": [
+    {
+      "Model": "Logistic Regression",
+      "Feature Set": "Baseline",
+      "Threshold": 0.5,
+      "Precision": 0.07100591715976332,
+      "Recall": 0.4506258692628651,
+      "F1-score": 0.12268080272624006,
+      "ROC-AUC": 0.49300883010781327,
+      "PR-AUC": 0.07214949515830989
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature Set": "Baseline",
+      "Threshold": 0.4382894513765693,
+      "Precision": 0.07424420467898729,
+      "Recall": 0.9666203059805285,
+      "F1-score": 0.1378968253968254,
+      "ROC-AUC": 0.49300883010781327,
+      "PR-AUC": 0.07214949515830989
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature Set": "Enhanced",
+      "Threshold": 0.5,
+      "Precision": 0.07437295528898583,
+      "Recall": 0.47426981919332406,
+      "F1-score": 0.12858220211161386,
+      "ROC-AUC": 0.5031169392822972,
+      "PR-AUC": 0.07463246366182257
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature Set": "Enhanced",
+      "Threshold": 0.4369403940921371,
+      "Precision": 0.07458858730497969,
+      "Recall": 0.9707927677329624,
+      "F1-score": 0.13853329363897984,
+      "ROC-AUC": 0.5031169392822972,
+      "PR-AUC": 0.07463246366182257
+    },
+    {
+      "Model": "Random Forest",
+      "Feature Set": "Baseline",
+      "Threshold": 0.5,
+      "Precision": 0.0626118067978533,
+      "Recall": 0.048678720445062586,
+      "F1-score": 0.054773082942097026,
+      "ROC-AUC": 0.5110787089781909,
+      "PR-AUC": 0.07444566429339844
+    },
+    {
+      "Model": "Random Forest",
+      "Feature Set": "Baseline",
+      "Threshold": 0.012744446432064082,
+      "Precision": 0.07850746268656716,
+      "Recall": 0.7315716272600834,
+      "F1-score": 0.14179808599541718,
+      "ROC-AUC": 0.5110787089781909,
+      "PR-AUC": 0.07444566429339844
+    },
+    {
+      "Model": "Random Forest",
+      "Feature Set": "Enhanced",
+      "Threshold": 0.5,
+      "Precision": 0.06191369606003752,
+      "Recall": 0.0458970792767733,
+      "F1-score": 0.052715654952076675,
+      "ROC-AUC": 0.5076680081673719,
+      "PR-AUC": 0.07355952736007457
+    },
+    {
+      "Model": "Random Forest",
+      "Feature Set": "Enhanced",
+      "Threshold": 0.007404209965361044,
+      "Precision": 0.07601540181343933,
+      "Recall": 0.8511821974965229,
+      "F1-score": 0.13956670467502852,
+      "ROC-AUC": 0.5076680081673719,
+      "PR-AUC": 0.07355952736007457
+    },
+    {
+      "Model": "XGBoost",
+      "Feature Set": "Baseline",
+      "Threshold": 0.5,
+      "Precision": 0.07386363636363637,
+      "Recall": 0.3616133518776078,
+      "F1-score": 0.12267044114177872,
+      "ROC-AUC": 0.5042922165833161,
+      "PR-AUC": 0.07384960954378912
+    },
+    {
+      "Model": "XGBoost",
+      "Feature Set": "Baseline",
+      "Threshold": 0.31074848771095276,
+      "Precision": 0.07519397535371976,
+      "Recall": 0.9165507649513213,
+      "F1-score": 0.13898555309501212,
+      "ROC-AUC": 0.5042922165833161,
+      "PR-AUC": 0.07384960954378912
+    },
+    {
+      "Model": "XGBoost",
+      "Feature Set": "Enhanced",
+      "Threshold": 0.5,
+      "Precision": 0.06963869463869464,
+      "Recall": 0.33240611961057026,
+      "F1-score": 0.115152975186702,
+      "ROC-AUC": 0.4935411765503704,
+      "PR-AUC": 0.07336053042758822
+    },
+    {
+      "Model": "XGBoost",
+      "Feature Set": "Enhanced",
+      "Threshold": 0.22629497945308685,
+      "Precision": 0.07432432432432433,
+      "Recall": 0.9638386648122392,
+      "F1-score": 0.1380065717415115,
+      "ROC-AUC": 0.4935411765503704,
+      "PR-AUC": 0.07336053042758822
+    }
+  ]
+}

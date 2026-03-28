@@ -1,0 +1,32 @@
+{
+  "dataset_doi": "10.5281/zenodo.17858297",
+  "dataset_file_used": "fslad_v11_data/school-of-software-finngen-synthetic-login-dataset-71b77aa/synthetic_login_activity_dataset.csv",
+  "n_rows": 48711,
+  "raw_column_count": 20,
+  "suspicious_rate": 0.073802631849069,
+  "random_state": 42,
+  "test_size": 0.2,
+  "cv_folds": 5,
+  "models_evaluated": [
+    "Logistic Regression",
+    "Random Forest",
+    "XGBoost",
+    "Isolation Forest",
+    "XGBoost (target encoding)"
+  ],
+  "best_f1_thresholds": {
+    "Logistic Regression baseline": 0.4382894513765693,
+    "Logistic Regression enhanced": 0.4369403940921371,
+    "Random Forest baseline": 0.012744446432064082,
+    "Enhanced Random Forest": 0.007404209965361044,
+    "XGBoost baseline": 0.31074848771095276,
+    "XGBoost (class-weighted)": 0.22629497945308685,
+    "XGBoost (target encoding)": 0.034308768808841705
+  },
+  "notes": [
+    "Target-derived aggregate features were excluded from final evaluation.",
+    "Frequency features were computed from the training split only.",
+    "Target encoding was cross-fitted on the training data only.",
+    "Table 1 is reproduced as a manuscript-aligned grouped summary."
+  ]
+}

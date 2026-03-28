@@ -1,0 +1,5 @@
+Feature Type,Examples
+Temporal,"login timestamp, hour, weekday"
+Categorical,"system_name, login_type"
+Binary,"login_success_flag, is_second_factor"
+Target,is_suspicious

@@ -1,0 +1,32 @@
+{
+  "Enhanced Random Forest": [
+    [
+      1585,
+      7439
+    ],
+    [
+      107,
+      612
+    ]
+  ],
+  "XGBoost (class-weighted)": [
+    [
+      393,
+      8631
+    ],
+    [
+      26,
+      693
+    ]
+  ],
+  "XGBoost (target encoding)": [
+    [
+      11,
+      9013
+    ],
+    [
+      0,
+      719
+    ]
+  ]
+}
